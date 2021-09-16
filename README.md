@@ -9,7 +9,7 @@ A webpage that allows the user to search for a specific city's weather for that 
 * JS
 
 ## Website
-<!-- https://maxwillner.github.io/password-generator/ -->
+https://maxwillner.github.io/weather_dashboard/
 
 ## Contribution
 Made by Max Willner
