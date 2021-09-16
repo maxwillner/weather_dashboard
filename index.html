@@ -5,19 +5,85 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-  <link rel="stylesheet" href="./assets/css/style.css" /> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Weather Dashboard</title>
 </head>
 
 <body>
     <header>
-
+      <h1 class="title">Weather Dashboard</h1>
     </header>
 
     <main>
+      <div class="container">
+         <div class="row border no-gutters">
+           <div class="col border">
+            <div class="card">
+              <h3 class="card-header text-uppercase">Search for a City:</h3>
+              <form id="user-form" class="card-body">
+                <input name="city-search" id="city-search" type="text" autofocus="true" class="form-input" />
+                <br>
+                <button type="submit" class="btn">Search</button>
+              </form>
+            </div>
+           </div>
+          <div class="col-8 border">
+            <div class="card">
+              <h2>Placeholder for searched city</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row border">
+          <div class="col">
+            <h3>Placeholder for searched city</h3>
+          </div>     
+          <div class="col-8 border">
+            <h3>5 Day Forecast</h3>
+          </div>
 
+
+        </div>
+      </div>
     </main>
 
-</body>
+
+    <!-- <main class="flex-row justify-space-between">
+      <div class="col-4 border">        
+          <div class="card">
+            <h3 class="card-header text-uppercase">Search for a City:</h3>
+            <form id="user-form" class="card-body">
+              <input name="city-search" id="city-search" type="text" autofocus="true" class="form-input" />
+              <br>
+              <button type="submit" class="btn">Search</button>
+            </form>
+          </div>
+    
+          <div class="card">
+            <h2>Placeholder for searched city</h2>
+          </div>
+        </div>
+    
+        <div class="col-8 border">
+          <h3>Placeholder for searched city</h3>
+        </div>    
+        
+        <div>
+          <div class="row">
+            <div class="col-6 border">
+              <h3>5 Day Forecast</h3>
+          </div>
+
+          <div class="row">
+            <div class="col-6">.col-6</div>
+            <div class="col-6">.col-6</div>
+          </div>
+        </div> -->
+
+
+ 
+    </main>
+
+</body> 
