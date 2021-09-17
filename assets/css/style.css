@@ -18,3 +18,7 @@ main {
     flex-wrap: wrap;
 }
 
+.btn {
+    background-color: cornflowerblue;
+    text-align: center;
+}
