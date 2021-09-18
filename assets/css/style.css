@@ -22,3 +22,11 @@ main {
     background-color: cornflowerblue;
     text-align: center;
 }
+
+
+.current-day h2 {
+    text-align: center;
+}
+.forecast h3 {
+    text-align: center;
+}
