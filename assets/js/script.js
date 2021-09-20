@@ -18,6 +18,8 @@ var threeDaysOut = moment().add(3, "days").format('l');
 var fourDaysOut = moment().add(4, "days").format('l');
 var fiveDaysOut = moment().add(5, "days").format('l');
 
+// var savedSearches = [];
+
 var formSubmitHandler = function(event) {
     event.preventDefault();
 
@@ -84,7 +86,7 @@ var getLocationWeather = function(location) {
             locationContainerEl.appendChild(todayHumidity);
 
             var todayUVIndex = document.createElement("h4");
-            // stuck - issue here around UV color-coding -- error is ""
+            // stuck - issue here around UV color-coding
             // if (todayUVIndex >= 2) {
             //     todayUVIndex.classList = "low";
             // } else if (todayUVIndex = 3 - 4.9) {
@@ -214,5 +216,9 @@ var displayLocation = function (location) {
     searchedLocationEl.textContent = location;
 
 }
+
+// var saveLocation = function() {
+    
+// }
 
 userFormEl.addEventListener("submit", formSubmitHandler);
