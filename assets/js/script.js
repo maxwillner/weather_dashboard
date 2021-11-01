@@ -33,11 +33,18 @@ var formSubmitHandler = function(event) {
         alert("Please enter a location");
     }
     // console.log(event);
+
+//     var storedSearchResults = JSON.parse(localStorage.getItem('searchedCities'));
+//     if (!storedSearchResults.includes(location)) {
+//         storedSearchResults.push(location);
+//         localStorage.setItem('searchedCities', JSON.stringify(storedSearchResults))
+//         // call function to update buttons
+//     }
 };
 
 var getLocationWeather = function(location) {
     // format the OpenWeather Geocoding API URL 
-    var geocodingApiUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + location + "&limit=5&appid=0899cac729532b722cf5a83da4e0e7f9"
+    var geocodingApiUrl = "https://api.openweathermap.org/geo/1.0/direct?q=" + location + "&limit=5&appid=0899cac729532b722cf5a83da4e0e7f9"
     
     // make a request to the OpenWeather Geocoding API URL
     fetch(geocodingApiUrl)
